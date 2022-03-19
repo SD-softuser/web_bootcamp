@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms&Input tags</title>
+</head>
+
+<body>
+    <h2>This is HTML Forms Tutorial</h2>
+    <!-- here form tag starts and it will ask for action, action means it you are going to save the all the information of this form which given by the user,in some file which is present at backend(name of backend file in which all information should be save) -->
+    <form action="backend.php">
+        <label for="name" >Name:</label> 
+        <!-- Here our div tag starts -->
+        <!-- div tag is a block element -->
+        <!-- we are using div tag to create a separet block for each input and next input should be go to next line -->
+        <div>
+            <!-- here input tag starts -->
+            <!-- in input tag the user going to give the input in our form --> 
+            <!-- input may be the text, file,date, time, checkbox, number that we are going to discuss below --> 
+            <!-- input tag is a spanic inline elment -->
+            <input type="text" name="myName" id="name">
+        </div>
+        <!-- here we are using br tag to seperate the input lines still we are using the div tag because by div tag only the block will be crated and every new input will taken in new line but the line spacing is not given so to give line spacing we are using the br tag -->
+        <!-- but giving br tag is not recommonded we can control that line spacing by using css programing. -->
+        <br>
+        <!-- here our label tag starts -->
+        <!-- in lable tag we are using for attribte in that attribute the value of that attribute must be same as the value of id attribute present in the input tag for which we crated the label tag --> 
+        <!-- this shows that the created lable is for that id so thats why we are creating the the same for value as well as the id value -->
+        <!-- with the help of the label for the role that is displayed in the form, by clicking on the role the box of the role get selected-->
+        <label for="role">Role:</label>
+        <div>
+            <input type="text" name="myRole" id="role">
+        </div>
+        <br> 
+        <label for="email">Email:</label>
+        <div>
+            <!-- Here our input tag starts for email and here name (myname) denotes that the input of email will be in myname at the backend (it is the way to show the backend email entered by the user)-->
+            <input type="email" name="myEmail" id="email">
+        </div> 
+        <br>
+        <div>
+            <!-- here our data input is took from the user by showing calender to the user -->
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+        <label for="bonus">Bonus:</label>
+        <div>
+            <!-- here our number input is took from the user entering and by increasing and decreasing the value -->
+            <input type="number" name="mynumber" id="bonus">
+        </div>
+        <br>
+        <div>
+            <!-- Here our checkbox starts in which we will ask users to check ot uncheck the box for eligibility. --> 
+            <!-- here we used checked word at end of command to check out checkbox by default -->
+            Aer you Eligible? <input type="checkbox" name="myEligibility" checked>
+        </div>
+        <br>
+        <div> 
+            <!-- here our radio button starts which will give users to select the button here in below option user have three options to select gender, user can select only one option one of them.beause in name attribute i have given the same name that is my gender-->
+            <!-- if i will give the different name then the user will be able to select the optiton with different name. -->
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender"> others <input type="radio" name="myGender">
+        </div>
+        <br>
+        <div>
+            <!-- here we defined our textarea tag to took the paragraph input from the user--> 
+            <!-- rows and cols is used to define the size of the textarea visible in our form.-->
+            Write about yourself: <br> <textarea name="myText" cols="90" rows="2"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">Car:</label> 
+            <!-- here our select tag will starts -->
+            <select name="MyCar" id="car">
+                <!-- in select we have options which will display the list of options in our form -->
+                <option value="Swift">Swift</option>
+                <!-- here selected key word will set the Indica as the default selected option for Cars in our form -->
+                <option value="Indica" selected>Indica</option>
+                <option value="Verna">Verna</option>
+                <option value="City">City</option>
+                <option value="Ertica">Ertica</option>
+                <option value="Wagonar">Wagonar</option>
+            </select>
+        </div>
+        <br>
+        <div> 
+            <!-- here we difined our submit button here in the value we are writing the text present in the submit button. -->
+            <input type="submit" value="Submit Now">
+            <!-- here we difined out reset button which will our form when user press that button. -->
+            <input type="reset" name="Reset Now">
+        </div>
+    </form>
+</body>
+
+</html>

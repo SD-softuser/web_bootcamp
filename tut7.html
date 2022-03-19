@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List and Tables</title>
+</head>
+
+<body>
+    <!-- this the unordered list type -->
+    <!-- here "ul" is unordered list and "li " is List -->
+    <!-- for ul tag we have three type of "type" attribute that are "circle, disc and square" -->
+    <!-- if you not mention the type attribute then it will by default select "disc" -->
+    <ul type="circle">
+        <li>This is my first type of unordered list</li>
+        <!-- you can also do the list within a List -->
+        <ul>
+            <li>this is first list within a list</li>
+            <li>this is second list within a list</li>
+            <li>this is third list within a list</li>
+        </ul>
+        <li>This is my second type of unordered list</li>
+        <li>This is my third type of unordered list</li>
+    </ul>
+    <!-- this is ordered list type and it is user difined that user can give numbering to the lines as per their requirenment  -->
+    <!-- vscode will give you the suggestion for the type of order nubering form that list of suggestions you can select as per your requirenment -->
+    <!-- here "ol" is ordered List and "li" is List -->
+    <!-- if you not mention the type attribute then it will by default select "1" -->
+    <ol type="a">
+        <li>This is my first type of ordered list</li>
+        <li>This is my second type of ordered list</li>
+        <li>This is my third type of ordered list</li>
+    </ol>
+    <!--TABLES -->
+    <!-- we are going to create here a table in h3 beacause it is ideal one and we have two tags with in table tag that is "thead" and "tbody" -->
+    <h3>
+        <table>
+            <thead>
+                <!-- to start the row in our table we are using tag named as "tr" --> 
+                <!-- within "tr" tag we are using tag "th" to create columns as we are in head wrinting within the name of our colomns. --> 
+                <!-- tr stands for table row -->
+                <tr>
+                    <th> roll no.</th>
+                    <th> name of employee</th>
+                    <th> employee Id</th>
+                    <th> role of employee</th>
+                </tr>
+            </thead> 
+            <!-- in body we are adding data of the table. -->
+            <tbody>
+                <tr> 
+                    <!-- in body of table we are using tag "td" to add the information in the columns of the table -->
+                    <td>1</td>
+                    <td>sanyog</td>
+                    <td>2002</td>
+                    <td>developer</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>saurabh</td>
+                    <td>2003</td>
+                    <td>programer</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>shubham</td>
+                    <td>2004</td>
+                    <td>expert</td>
+                </tr>
+            </tbody>
+        </table>
+    </h3>
+</body>
+
+</html>
